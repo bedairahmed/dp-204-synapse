@@ -1,0 +1,17 @@
+{
+	"name": "create_db",
+	"properties": {
+		"content": {
+			"query": "\nCREATE TABLE VehicleTollBooth\n(\n\tMake varchar(100),\n\tModel varchar(100),\n\tVehicleType int,\n\tState varchar(10),\n\tTollAmount int\n)\n\nSELECT * FROM VehicleTollBooth\n\nSELECT COUNT(*) FROM VehicleTollBooth\n\nCREATE TABLE WebMetrics\n(\n    Minimum decimal,\n    Maximum decimal,\n    Average decimal,\n    Metrictime DATETIME,\n    MetricName VARCHAR(200)\n)\n\nSELECT * FROM WebMetrics\n\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "datapool2",
+				"poolName": "datapool2"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
